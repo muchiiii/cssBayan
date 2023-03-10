@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-style: 100%;
+	line-height: 1;
+	font-style: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
+/*background: url('../img/background.jpeg');
+background-size: 100%;*/
+body{
+	display: flex;
+    flex-direction: column;
+	background-color: #fae7e7;
+	overflow-y: visible;
+	overflow-x: hidden;
+}
+
+.dws_wrapper{
+	background-color: #fae7e7;
+	border: 5px solid rgb(167,19,96);
+	border-radius: 8%;
+	max-width: 50%;
+	margin: 30px auto;
+	text-align: center;
+	padding: 20px;
+}
+
+.main_h1{
+	text-align: start;
+	margin: 12px 0;
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 700;
+	font-size: 5vw;
+}
+
+.meme_wrapper_line{
+	height: 3px;
+	width: 100%;
+	background-color: rgb(167,19,96);
+}
+
+.meme_container__item {
+	background-color: rgb(238, 207, 167);
+}
+
+.meme_wrapper_btn{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.meme_wrapper_title{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3vw;
+	font-weight: 700;
+	padding: 2% 0;
+	color:rgb(0, 0, 0);
+	transition: all 0.4s;
+}
+
+.btn {
+	width: 25px;
+	height: 25px;
+	margin-right: 0.9rem;
+	transition: all 0.3s;
+}
+
+.dws_wrapper:hover .btn {
+	background: url('../img/plus.png') center/cover no-repeat;
+	background-size: 100%;
+}
+
+.mem{
+	width: 0;
+	height: 0;
+	transition: all 0.6s;
+}
+
+.meme_wrapper_item,
+.btn,
+.mem {
+  cursor: pointer;
+}
+
+.meme_input:checked~label .meme_wrapper_title{
+	color: black;
+  }
+
+.meme_input:checked~label .mem,
+.meme_wrapper_item:hover .mem{
+	border: 5px solid #A71360;
+	border-radius: 15%;
+	width: 40%;
+	height: 40%;
+	margin: 15px 0 15px 0;
+}
+
+.meme_input:checked~label .btn,
+.meme_wrapper_item:active .btn {
+	background: url('../img/krestik.png') center/cover no-repeat;
+	background-size: 100%;
+}
+
+.meme_input:checked~label .meme_wrapper_title,
+.meme_wrapper_item:active .meme_wrapper_title {
+	color: #A71360;
+}
+
+.meme_input:checked~label .meme_wrapper_title,
+.meme_wrapper_item:visited .meme_wrapper_title {
+	color: #000000;
+}
