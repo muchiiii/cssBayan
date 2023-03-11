@@ -1,2 +1,2 @@
 # cssBayan
-https://muchiiii.github.io/cssBayan/cssBayan/index.html
+https://muchiiii.github.io/cssBayan/CssBayan/index.html
