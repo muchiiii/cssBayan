@@ -70,10 +70,6 @@ body{
 	background-color: rgb(167,19,96);
 }
 
-.meme_container__item {
-	background-color: rgb(238, 207, 167);
-}
-
 .meme_wrapper_btn{
 	display: flex;
 	justify-content: space-between;
@@ -90,7 +86,6 @@ body{
 }
 
 .btn {
-	display: block;
 	width: 25px;
 	height: 25px;
 	margin-right: 0.9rem;
@@ -99,7 +94,6 @@ body{
 
 .dws_wrapper:hover .btn {
 	background: url('../img/plus.png') center/cover no-repeat;
-	background-size: 100%;
 }
 
 .mem{
@@ -130,7 +124,6 @@ body{
 .meme_input:checked~label .btn,
 .meme_wrapper_item:active .btn {
 	background: url('../img/krestik.png') center/cover no-repeat;
-	background-size: 100%;
 }
 
 .meme_input:checked~label .meme_wrapper_title,
@@ -141,4 +134,48 @@ body{
 .meme_input:checked~label .meme_wrapper_title,
 .meme_wrapper_item:visited .meme_wrapper_title {
 	color: #000000;
+}
+
+@media screen and (max-width: 820px){
+	.dws_wrapper{
+		max-width: 70%;
+	}
+
+	.meme_input:checked~label .mem,
+	.meme_wrapper_item:hover .mem{
+		border: 2px solid #A71360;
+		border-radius: 10%;
+		width: 35%;
+		height: 35%;
+		margin: 12px 0 12px 0;
+	}
+
+	.btn {
+		width: 15px;
+		height: 15px;
+		margin-right: 0.5rem;
+		transition: all 0.3s;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.dws_wrapper{
+		max-width: 80%;
+	}
+
+	.meme_input:checked~label .mem,
+	.meme_wrapper_item:hover .mem{
+		border: 2px solid #A71360;
+		border-radius: 10%;
+		width: 30%;
+		height: 30%;
+		margin: 10px 0 10px 0;
+	}
+
+	.btn {
+		width: 10px;
+		height: 10px;
+		margin-right: 0.5rem;
+		transition: all 0.3s;
+	}
 }
